@@ -31,17 +31,23 @@ const addNumbersSmall = {
 
 const partitionEvenOddLarge = {
   ...commonSchema,
-  benchmark: () => partitionEvenOdd(largeData),
+  benchmark: () => {
+    partitionEvenOdd(largeData);
+  },
 };
 
 const partitionEvenOddMedium = {
   ...commonSchema,
-  benchmark: () => partitionEvenOdd(mediumData),
+  benchmark: () => {
+    partitionEvenOdd(mediumData);
+  },
 };
 
 const partitionEvenOddSmall = {
   ...commonSchema,
-  benchmark: () => partitionEvenOdd(smallData),
+  benchmark: () => {
+    partitionEvenOdd(smallData);
+  },
 };
 
 module.exports = {
